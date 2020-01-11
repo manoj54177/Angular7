@@ -16,7 +16,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class OrderComponent implements OnInit {
 customerList:Customer[];
 isValid: boolean=true;
-  constructor(private service:OrderService,
+  constructor(public service:OrderService,
     private customerService: CustomerService,
     private dialog:MatDialog,
     private toastr: ToastrService,
